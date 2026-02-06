@@ -1,0 +1,92 @@
+<nav>
+  <h2>📚 BookStore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+body{
+    font-family:Arial;
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* Background bookstore image */
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size:cover;
+    background-position:center;
+}
+
+/* Login box */
+.box{
+    width:320px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px;
+    width:95%;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+<h2>Book Store Login</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+ alert("Login successful");
+ window.location="index.html";
+}
+</script>
+
+</body>
+</html>
